@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="leave_type_form_view" model="ir.ui.view">
+        <field name="name">leave.type.form.view</field>
+        <field name="model">leave.type</field>
+        <field name="arch" type="xml">
+            <form string="Leave Request Type">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="leave_type_list_view" model="ir.ui.view">
+        <field name="name">leave.type.list.view</field>
+        <field name="model">leave.type</field>
+        <field name="arch" type="xml">
+            <list string="Leave Request Type">
+                <field name="name" />
+            </list>
+        </field>
+    </record>
+
+    <record id="leave_type_actions" model="ir.actions.act_window">
+        <field name="name">Leave Type</field>
+        <field name="res_model">leave.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

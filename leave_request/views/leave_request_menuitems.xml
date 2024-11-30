@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="leave_menu"
+              sequence="10"
+              name="Leave"
+              groups="base.group_user" />
+
+    <menuitem id="leave_request_menu"
+              sequence="10"
+              parent="leave_menu"
+              name="Leave Requests"
+              action="leave_request_actions" />
+
+    <menuitem id="leave_requests_configurations_menu"
+              sequence="100"
+              parent="leave_menu"
+              name="Configurations" />
+
+    <menuitem id="leave_type_menu"
+              sequence="1"
+              parent="leave_requests_configurations_menu"
+              name="Leave Type"
+              action="leave_type_actions" />
+
+</odoo>
